@@ -1,1 +1,108 @@
-666
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Privacy Policy / 隐私政策</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    p {
+      margin-bottom: 1em;
+    }
+    .lang-toggle {
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+    button {
+      padding: 6px 12px;
+      border: none;
+      background-color: #007BFF;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="lang-toggle">
+    <button onclick="toggleLanguage()">切换语言 / Switch Language</button>
+  </div>
+
+  <div id="en">
+    <h1>Privacy Policy</h1>
+    <p>This Privacy Policy explains how information is collected, used and disclosed by this App with respect to user’s access and use of our service through the application.</p>
+
+    <h2>Information Collection</h2>
+    <p>We do not collect personal data. We use third-party statistics SDKs to collect technical information such as your iPhone’s system version, language, and approximate location for analytics purposes only.</p>
+
+    <h2>Information Usage</h2>
+    <ul>
+      <li>To provide services or information you requested.</li>
+      <li>To respond to your emails and provide support.</li>
+      <li>To analyze usage trends anonymously and improve user experience.</li>
+      <li>To send confirmations, updates, or service-related notifications.</li>
+    </ul>
+
+    <h2>Changes</h2>
+    <p>We may revise this policy in the future. Changes will be posted on this page. By continuing to use the app, you agree to the updated policy.</p>
+
+    <h2>Contact</h2>
+    <p>If you have any questions, please contact us at: <a href="mailto:bestliaozhiyao@gmail.com">yuedongkui@gmail.com</a></p>
+  </div>
+
+  <div id="zh" style="display:none;">
+    <h1>隐私政策</h1>
+    <p>本隐私政策说明了本应用如何收集、使用和披露用户在使用本服务过程中的相关信息。</p>
+
+    <h2>信息收集</h2>
+    <p>我们不会收集任何个人数据。仅使用第三方统计 SDK 收集技术信息，如系统版本、系统语言和粗略地理位置，供数据分析使用。</p>
+
+    <h2>信息使用</h2>
+    <ul>
+      <li>用于提供您所请求的服务或信息。</li>
+      <li>用于回复您的邮件并提供客户支持。</li>
+      <li>用于匿名分析使用趋势，优化用户体验。</li>
+      <li>用于发送确认通知、更新提示或其他服务相关信息。</li>
+    </ul>
+
+    <h2>政策变更</h2>
+    <p>本隐私政策可能在未来进行修改。更新内容将在本页面公布。继续使用本应用即表示您同意新的政策条款。</p>
+
+    <h2>联系方式</h2>
+    <p>如有任何疑问，请通过以下邮箱联系我们：<a href="mailto:yuedongkui@gmail.com">bestliaozhiyao@gmail.com</a></p>
+  </div>
+
+  <script>
+    function toggleLanguage() {
+      var en = document.getElementById("en");
+      var zh = document.getElementById("zh");
+      if (en.style.display === "none") {
+        en.style.display = "block";
+        zh.style.display = "none";
+      } else {
+        en.style.display = "none";
+        zh.style.display = "block";
+      }
+    }
+  </script>
+
+</body>
+</html>
